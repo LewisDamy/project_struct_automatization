@@ -29,30 +29,26 @@ Eventually, when finished it will open VSCode or PyCharm with the correspondent 
 
 ## Samples:
 ### Python Microservice
-Here is a print of how was the execution of the `py` project:
-![Executing the script](/images/python_microservice/script_execution.png)
-The result is:
-![Python Microservice Project](/images/python_microservice/python_microservice_project.png)
+|  `py` project: | result |
+| ------------------------------  | ------ |
+| ![Executing the script](/images/python_microservice/script_execution.png) | ![Python Microservice Project](/images/python_microservice/python_microservice_project.png) |
+
 
 ### Django
-Here is a print of how was the execution of the `py-django` project:
-![Executing the script](/images/django_project/script_execution.png)
-The result is:
-![Django Project](/images/django_project/Django_project.png)
+|  `py-django` project: | result |
+| ------------------------------  | ------ |
+| ![Executing the script](/images/django_project/script_execution.png) | ![Django Project](/images/django_project/Django_project.png)
 
 ### JS React 
-Here is a print of how was the execution of the `js-react` project:
-![Executing the script](/images/react_project/script_execution_pt1.png)
-The result is:
-![React Project](/images/react_project/React_project.png)
-Server Running:
+|  `js-react` project: | result |
+| ------------------------------  | ------ |
+| ![Executing the script](/images/react_project/script_execution_pt1.png) | ![React Project](/images/react_project/React_project.png) |
 ![Server Running](/images/react_project/running_server_react.png)
 
 ### JS React Native
-Here is a print of how was the execution of the `js-react-native` project:
-![Executing the script](/images/react_project/script_execution.png)
-The result is:
-![React Native Project](/images/react_native_project/React_Native_app.png)
+|  `js-react-native` project: | result |
+| ------------------------------  | ------ |
+| ![Executing the script](/images/react_native_project/script_execution.png) | ![React Native Project](/images/react_native_project/React_Native_app.png)
 
 ## Future Improvements
 - Customize the tool to create project in the selected directory such as a `my-projects` inside a person's machine
