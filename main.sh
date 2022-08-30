@@ -1,6 +1,9 @@
 #!/bin/zsh
 
 py_proj() {
+    echo "Creating venv ..."
+    python -m venv .venv
+    source venv/bin/activate
     echo "Creating mylib dir ..."
     mkdir mylib
     cd mylib
@@ -23,8 +26,8 @@ py_proj() {
     else
         return 1
     fi
-    # open .
-    # code .  
+    open .
+    pycharm . #code .  
 }
 
 py_django_proj() {
@@ -101,7 +104,6 @@ js_react_proj() {
 }
 
 js_react_native_proj() {
-    #TODO
     expo init $projectName
     cd $projectName
     npm start
@@ -118,7 +120,7 @@ main() {
     # making directory of project's name 
     echo "Creating ${projectName} ..."
     mkdir $projectName
-    # mkdir /Users/lewdamy/my-projects/$projectName  WHEN DEPLOYED!
+    # mkdir /Users/lewdamy/my-projects/$projectName
 
 
     # receive type of proj input
@@ -129,7 +131,7 @@ main() {
     # py-django OK
     # c OK
     # js-react OK
-    # js-react-native 
+    # js-react-native OK
 
     # get inside the dir of the project
     cd $projectName
