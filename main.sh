@@ -11,7 +11,7 @@ py_proj() {
     #     return 1
     # fi
     cd ..
-    echo "Creating files ..."
+    echo "Creating files ..." 
     touch Dockerfile ; touch Makefile
     touch main.py
     touch requirements.txt ; touch README.md
@@ -88,7 +88,23 @@ py_django_proj() {
 }
 
 c_proj() {
-    
+    echo "Creating files ..." 
+    touch main.c ; touch Makefile
+}
+
+js_react_proj() {
+    node -v # check the version
+    npx create-react-app .  #create the react app
+    touch Makefile
+    code .
+    npm start
+}
+
+js_react_native_proj() {
+    #TODO
+    expo init $projectName
+    cd $projectName
+    npm start
 }
 
 main() {
@@ -111,10 +127,9 @@ main() {
 
     # py OK
     # py-django OK
-    # c 
-    # py-fastapi
-    # js-react
-    # js-react-native
+    # c OK
+    # js-react OK
+    # js-react-native 
 
     # get inside the dir of the project
     cd $projectName
@@ -131,6 +146,12 @@ main() {
     elif [ "$projType" = "c" ]
     then
         c_proj
+    elif [ "$projType" = "js-react" ]
+    then
+        js_react_proj
+    elif [ "$projType" = "js-react-native" ]
+    then
+        js_react_native_proj
     else
         echo "command not valid"
         exit 1

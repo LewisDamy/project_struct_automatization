@@ -1,0 +1,1 @@
+##Project to automatize the creation of directories templates of Python (Microservices, Django), C and JS(React, ReactNative) projects
